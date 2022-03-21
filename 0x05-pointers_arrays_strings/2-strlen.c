@@ -1,30 +1,20 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * _strncpy - copies a string
- * @dest: destination string
- * @src: source string
- * @n: number of bytes to copy
+ *_strlen -length of a string
+ *@s: A pointer to an int that will be changed/updated
  *
- * Return: pointer to the resulting string
+ *Return: void that means our answer is correct
  */
-char *_strncpy(char *dest, char *src, int n)
+
+int _strlen(char *s)
 {
-	int i;
+int u;
 
-	i = 0;
-
-	while (src[i] != '\0' && i < n)
-	{
-		dest[i] = src[i];
-		i++;
-	}
-
-	while (i < n)
-	{
-		dest[i] = '\0';
-		i++;
-	}
-
-	return (dest);
+u = 0;
+while (s[u] != '\0')
+{
+u++;
+}
+return (u);
 }
